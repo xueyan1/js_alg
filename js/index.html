@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../index.js"> </script>
+</head>
+
+<body>
+  <div id="text"></div>
+  <button onclick="document.getElementById('img').src = './asset/eg_bulboff.gif'">关灯</button>
+  <img id="img" src="./asset/eg_bulboff.gif">
+  <button onclick="document.getElementById('img').src = './asset/eg_bulbon.gif'">开灯</button>
+  <button onclick="setText()">隐藏字</button>
+  <button onclick="setText('text','blcok')">显示字</button>
+  <script>
+    document.getElementById('text').innerHTML = 'text'
+    document.getElementById('text').style.color = 'red'
+    document.getElementById('text').style.fontSize = '40px'
+  </script>
+</body>
+
+</html>
